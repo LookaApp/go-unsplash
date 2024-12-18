@@ -30,11 +30,9 @@ type SearchService service
 
 // SearchOpt should be used to query /search endpoint
 type SearchOpt struct {
-	Page        int     `url:"page"`
-	PerPage     int     `url:"per_page"`
-	Query       string  `url:"query"`
-	Color       *string `url:"color,omitempty"`
-	Orientation *string `url:"orientation,omitempty"`
+	Page    int    `url:"page"`
+	PerPage int    `url:"per_page"`
+	Query   string `url:"query"`
 }
 
 // Valid validates a SearchOpt
